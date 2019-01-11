@@ -1,0 +1,347 @@
+//HISTORY & Timeline//
+.history
+  padding: 60px 0
+  background: #ededed
+  overflow: hidden
+  .container
+    display: flex
+    flex-direction: column
+    align-items: center
+    h4
+      color: #3e3d3d
+      font-family: $montserrat
+      font-size: em(13)
+      line-height: 18px
+      text-transform: uppercase
+      letter-spacing: 1.47px
+      text-align: left
+    h5
+      font-family: $montserrat
+      font-size: em(11)
+      text-align: left
+
+
+    p
+      text-align: center
+      color: #3e3d3d
+      font-family: $crimson
+      font-size: em(14)
+      line-height: 25px
+      letter-spacing: 1.4px
+      margin: 30px 0
+  .timeline-article
+    p
+      text-align: left
+
+
+
+
+/*===== Vertical Timeline =====*/
+.timeline
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  max-width: 100%
+  width: 100%
+  margin: 0 auto
+
+  article
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    margin-top: 5px
+    align-items: flex-start
+    position: relative
+
+  .top
+    margin-top: 85px
+
+  .vertical__line
+    position: absolute
+    width: 2px
+    height: 100%
+    top: 0
+    left: 50%
+    margin-left: -2px
+    background: #3e3d3d
+    z-index: 0
+
+  .meta-date
+    position: absolute
+    top: 0
+    width: 72px
+    height: 72px
+    color: #3e3d3d
+    border-radius: 100%
+    border: 2px solid #3e3d3d
+    background: #ededed
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    font-family: $montserrat
+    font-size: em(13)
+    cursor: pointer
+    &:hover
+      background-color: #3e3d3d
+      color: #ffffff
+
+  .center
+    position: absolute
+    top: 65%
+    z-index: 1
+    cursor: pointer
+    &:hover
+      background-color: #3e3d3d
+      color: #ffffff
+
+  .timeline-end
+    position: absolute
+    bottom: 5px
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 25px
+    cursor: pointer
+
+    .meta-date
+      position: absolute
+      bottom: 0
+      width: 72px
+      height: 72px
+      color: #3e3d3d
+      border-radius: 100%
+      border: 2px solid #3e3d3d
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      font-family: $montserrat
+      font-size: em(13)
+
+      &:hover
+        background-color: black
+        color: #ffffff
+        .idea
+          z-index: 1
+      object
+        position: absolute
+        left: 20px
+        top: 23px
+      .idea
+        position: absolute
+        z-index: -1
+
+
+  .left__item
+    display: flex
+    flex-direction: column
+    font-size: em(14)
+    color: #3e3d3d
+    position: relative
+    max-width: 45%
+    min-width: 260px
+    border: 2px solid #3e3d3d
+    border-radius: 3px
+    margin: 20px 10px 20px 20px
+    padding: 20px
+    h4
+      font-family: $montserrat
+      font-size: em(13)
+      line-height: 18px
+      text-transform: uppercase
+      letter-spacing: 1.47px
+      text-align: left
+    h5
+      font-family: $montserrat
+      font-size: em(11)
+      text-align: left
+    p
+      text-align: left
+      font-family: $crimson
+      font-size: em(14)
+      line-height: 25px
+      letter-spacing: 1.4px
+      margin: 30px 0
+
+
+
+
+    .fa-location-arrow
+      position: absolute
+      top: 15px
+      right: -9px
+      background-color: transparent
+      color: #ededed
+      font-size: 20px
+      transform: rotate(30deg)
+      text-shadow: 3px -3px 2px #3e3d3d
+
+
+
+
+  .right__item
+    display: flex
+    flex-direction: column
+    align-self: flex-end
+    color: #3e3d3d
+    position: relative
+    max-width: 45%
+    min-width: 260px
+    border: 2px solid #3e3d3d
+    border-radius: 3px
+    margin: 20px 20px 10px 10px
+    padding: 20px
+
+    h4
+
+      font-family: $montserrat
+      font-size: em(13)
+      line-height: 18px
+      text-transform: uppercase
+      letter-spacing: 1.47px
+      text-align: left
+    h5
+      font-family: $montserrat
+      font-size: em(11)
+      text-align: left
+    p
+      text-align: left
+
+      font-family: $crimson
+      font-size: em(14)
+      line-height: 25px
+      letter-spacing: 1.4px
+      margin: 30px 0
+
+    .fa-location-arrow
+      position: absolute
+      top: 15px
+      left: -9px
+      background-color: transparent
+      color: #ededed
+      font-size: 20px
+      transform: rotate(245deg)
+      text-shadow: 3px -4px 2px #3e3d3d
+
+
+
+
+
+
+  .first, .second, .third
+    cursor: pointer
+    &:hover
+      background-color: #3e3d3d
+      h4, h5, p
+        color: #e4e4e4
+      .fa-location-arrow
+        color: #3e3d3d
+        text-shadow: 3px -4px 0 #3e3d3d
+  .dot
+    margin-top: 35px
+    width: 17px
+    height: 17px
+    background-color: black
+    position: absolute
+    z-index: 1
+    &:before
+      content: ''
+      display: block
+      width: 16px
+      height: 16px
+      border-radius: 17px
+      background-color: black
+      padding: 8px
+      margin: 0 auto
+        top: 60px
+        right: 1px
+
+  .middle
+    margin-bottom: 30px
+    p
+      margin-bottom: 0
+    .right__item
+      margin-top: 55px
+
+  .down
+    margin-top: 80px
+    margin-bottom: 40px
+
+/*===== Responsive Vertical Timeline =====*/
++size(tablet)
+  .timeline
+
+    .meta-date
+      margin-left: 0
+      left: 20px
+
+    .timeline-end
+      left: 3px
+      bottom: 20px
+      margin: 0
+      padding: 0
+
+  .timeline .vertical__line
+    margin-left: 0
+    left: 55px
+
+
+  .top, .middle, .down
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    .left__item, .right__item
+      max-width: 700px
+      align-items: flex-end
+      margin: 0 auto
+        top: 10px
+        left: 85px
+        right: 15px
+    .dot, .fa-location-arrow
+      display: none
+  .center
+    margin-top: 20px
+
++size(phone)
+  .timeline
+    .timeline-end
+      bottom: 20px
+      margin: 0
+      padding: 0
+
+  .timeline .vertical__line
+    z-index: 0
+  .top, .middle, .down
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+    .left__item, .right__item
+      max-width: 700px
+      align-items: flex-end
+      margin: 10px
+      background: #ededed
+
+      z-index: 2
+    .dot, .fa-location-arrow
+      display: none
+  .center
+    margin-top: 20px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,180 @@
+=main_nav()
+  .header
+    .mobile__container
+      position: fixed
+      top: 0
+      max-width: 800px
+      width: 100%
+      display: none
+      .menu
+        width: 100%
+        height: 40px
+        position: relative
+        text-align: right
+        cursor: pointer
+        z-index: 100
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+
+
+        &__label
+          background: none
+          border: none
+          width: 40px
+          height: 40px
+          padding: 0 1.25em
+          font-size: 1.3em
+          color: #f2f2f2
+          position: absolute
+          top: 0
+          right: 45px
+          outline: none
+          text-align: right
+        .logo
+          display: flex
+          flex-direction: row
+          position: absolute
+          img
+            margin-right: 5px
+          h1
+            color: #f6f6f6
+            font-family: $montserrat
+            font-size: em(18)
+            font-weight: 400
+            line-height: 50px
+            text-transform: uppercase
+            letter-spacing: 1.8px
+        .social
+          &__wrap
+            position: absolute
+            top: 10px
+            left: 0
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: center
+            width: 70px
+            a
+              margin: 5px
+            .fa-twitter
+
+                color: #00acee
+            .fa-facebook
+                color: #3b5998
+            .fa-behance
+                color: #008cfd
+
+            .social
+              .fa-facebook:after
+                content: ''
+                background-color: #ffffff
+                padding-left: 2px
+                margin-left: 6px
+
+              .fa-twitter:after
+                content: ''
+                background-color: #ffffff
+                padding-left: 2px
+                margin-left: 4px
+
+
+
+        &__inner li a span,
+        &__label span
+          font-size: 0.68em
+          text-transform: uppercase
+          letter-spacing: 1px
+          line-height: 1.2
+          font-weight: 600
+
+        .fa
+          vertical-align: top
+          line-height: 1.25
+          margin-left: 0.65em
+          font-size: 1.15em
+
+        &__inner
+          list-style: none
+          padding: 0 1.25em
+          font-size: 1.3em
+          margin: 0
+          position: absolute
+          top: 40px
+          right: 0
+          overflow: hidden
+          height: 0
+          transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1)
+        &__inner li a
+              display: block
+              padding: 0.53em 0
+              line-height: 1.2
+              opacity: 0
+              color: #ffffff
+              transform: translate3d(0, -20px, 0)
+              transition: opacity 0.3s, transform 0.3s
+              font-family: $montserrat
+              font-size: em(14)
+
+
+        &.menu--open .menu__inner
+          height: 550px
+
+        &__inner li a:hover
+          color: #6e6e70
+
+
+      .menu--open .menu__inner li a
+        opacity: 1
+        pointer-events: auto
+        transform: translate3d(0, 0, 0)
+
+
+      .menu--open .menu__inner li:nth-child(2) a
+        transition-delay: 0.04s
+
+
+      .menu--open .menu__inner li:nth-child(3) a
+        transition-delay: 0.08s
+
+
+      .menu--open .menu__inner li:nth-child(4) a
+        transition-delay: 0.12s
+
+      .menu--open .menu__inner li:nth-child(5) a
+        transition-delay: 0.16s
+
+
+      .menu--open .menu__inner li:nth-child(6) a
+        transition-delay: 0.2s
+
+      .morph-shape,
+      .morph-shape svg
+        position: absolute
+        max-width: 800px
+        width: 100%
+        top: 0
+        left: 0
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+
+      .morph-shape
+        height: 40px
+        transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1)
+
+      .morph-shape svg
+        height: 100%
+
+      .menu.menu--open .morph-shape
+        height: 450px
+
+      .morph-shape svg path
+        fill: rgba(162, 162, 162, 0.65)
+
+  +size(phone)
+    .header
+        .mobile__container
+          display: flex
+

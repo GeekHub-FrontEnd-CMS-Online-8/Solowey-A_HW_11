@@ -1,0 +1,104 @@
+.team
+  background: url("../img/team/team_bg.jpg") no-repeat center center / cover
+  padding: 70px 0
+  .container
+    flex-direction: column
+    align-items: center
+    p
+      font-family: $crimson
+      font-size: em(14)
+      letter-spacing: 1.4px
+      text-align: center
+      line-height: 25px
+      max-width: 980px
+      margin-top: 30px
+      margin-bottom: 55px
+      color: #3e3d3d
+    .wrap
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: center
+
+      .item
+        position: relative
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        margin: 15px
+        &:hover
+          .overlay
+            display: block
+        .overlay
+          position: absolute
+          width: 95%
+          height: 95%
+          background-color: #f6f6f6
+          opacity: 0.8
+          display: none
+
+
+          .content
+            padding-bottom: 20px
+            padding-left: 15px
+            width: 95%
+            height: 95%
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: flex-end
+
+            .social
+              &__wrap
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                justify-content: space-between
+                width: 60px
+                a
+                  .fa-twitter
+                    margin-left: 4px
+
+                .social
+                  .fa-facebook:after
+                    content: ''
+                    background-color: #aaaaaa
+                    padding-left: 2px
+                    margin-left: 6px
+
+                  .fa-twitter:after
+                    content: ''
+                    background-color: #aaaaaa
+                    padding-left: 2px
+                    margin-left: 4px
+            .name
+              color: #3e3d3d
+              font-family: $montserrat
+              font-size: em(13)
+              letter-spacing: 1.47px
+              padding: 0
+              margin: 0
+            .prophecy
+              display: block
+              max-width: 35px
+              color: #3e3d3d
+              font-family: $crimson
+              font-size: em(14)
+              font-style: italic
+              padding: 0
+              margin: 0
+                right: 150px
+
+              &:after
+                content: ''
+                display: block
+                background-color: #515151
+                padding: 1px
+                width: 145px
+                margin-bottom: 20px
+                margin-top: 5px
+
+
+

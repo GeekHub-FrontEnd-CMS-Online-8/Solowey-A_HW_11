@@ -1,0 +1,68 @@
+.services
+  background: #3e3d3d url("../img/services/services_bg.jpg") no-repeat center center / cover
+  padding: 60px 0
+  .container
+    flex-direction: column
+    align-items: center
+    .services__title
+      color: #ffffff !important
+      &:after
+        content: "==============="
+        margin: 0 auto
+        top: -15px
+        display: block
+        color: transparent
+        text-decoration: underline wavy #ffffff !important
+
+    p
+      color: #cfcfcf
+      font-family: $crimson
+      font-size: em(14)
+      line-height: 25px
+      letter-spacing: 1.4px
+      text-align: center
+      max-width: 1000px
+      margin-top: 40px
+
+  .wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    flex-wrap: wrap
+    max-width: 1170px
+    margin: 0 auto
+    fieldset
+      display: flex
+      flex-direction: column
+      align-items: center
+      border: 1px solid white
+      width: 250px
+      text-align: center
+      padding: 25px 25px
+
+      legend
+        color: white
+        padding: 15px
+        cursor: pointer
+        transition: 0.3s
+        display: block
+        &:hover
+          transform: scale(1.1)
+      h4
+
+        color: #d8d8d8
+        font-family: $montserrat
+        font-size: em(13)
+        text-transform: uppercase
+        letter-spacing: 1.47px
+        max-width: 100px
+        text-align: center
+        margin:  0 auto
+          bottom: 30px
+      p
+        color: #d8d8d8
+        font-family: $crimson
+        font-size: em(14)
+        line-height: 20.31px
+        letter-spacing: 1.4px
+

@@ -1,0 +1,93 @@
+.header_fixed
+  position: fixed
+  top: 0
++main_nav
+header
+
+  background-color: white
+  position: fixed
+  top: 0
+  margin: 0 auto
+  width: 100%
+  z-index: 9999
+  .header
+    background: transparent
+
+
+  .container
+
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      padding: 0 15px
+
+      nav
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+
+        .top__nav
+          display: flex
+          flex-direction: row
+          flex-wrap: wrap
+          justify-content: center
+          li
+            .item
+              color: #aaaaaa
+              font-family: $montserrat
+              font-size: em(12)
+              line-height: 50px
+              text-transform: uppercase
+              margin: 0 5px
+              &:hover
+                border-bottom: 1px solid #aaaaaa
+
+
+
+      .social
+        &__wrap
+          display: flex
+          flex-direction: row
+          flex-wrap: wrap
+          justify-content: space-between
+          width: 60px
+          a
+            .fa-twitter
+              margin-left: 4px
+
+          .social
+            .fa-facebook:after
+              content: ''
+              background-color: #aaaaaa
+              padding-left: 2px
+              margin-left: 6px
+
+            .fa-twitter:after
+              content: ''
+              background-color: #aaaaaa
+              padding-left: 2px
+              margin-left: 4px
+
+      .logo
+        display: flex
+        flex-direction: row
+        img
+          margin-right: 10px
+        h1
+          color: #757575
+          font-family: $montserrat
+          font-size: em(18)
+          text-transform: uppercase
+          align-self: center
+
+
++size(phone)
+  .header
+    .container
+      .logo, .nav, .social__wrap
+        display: none
+
+
+

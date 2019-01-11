@@ -1,0 +1,91 @@
+.portfolio
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 75px
+  width: 100%
+  .container
+    flex-direction: column
+
+    p
+      max-width: 980px
+      text-align: center
+      color: #3e3d3d
+      font-family: $crimson
+      font-size: em(14)
+      line-height: 25px
+      letter-spacing: 1.4px
+      margin-top: 30px
+      margin-bottom: 50px
+
+  .galery
+    width: 100%
+    height: 100%
+
+
+    #filters
+      display: flex
+      flex-direction: row
+      justify-content: center
+      margin-bottom: 60px
+
+      .button
+        display: flex
+        flex-direction: column
+        align-items: center
+        color: #3e3d3d
+        font-family: $montserrat
+        font-size: em(12)
+        background: transparent
+        line-height: 50px
+        letter-spacing: 1.5px
+        border: 2px solid #3e3d3d
+        padding: 0 25px
+        cursor: pointer
+        position: relative
+        transition: 0.4s
+        margin: 3px
+        &:hover
+          background-color: #3e3d3d
+          color: #ffffff
+      .active
+        background-color: #3e3d3d
+        color: #ffffff
+
+
+  .works
+    width: 100%
+    margin: 0 auto
+    padding: 0
+
+    .work
+      width: 399px
+      height: auto
+      float: left
+      margin: 0
+      overflow-y: hidden
+      padding-bottom: 0
+      img
+        width: 399px
+        display: block
+
+  .isotope .isotope-item
+    transition-duration: 0.8s
+
+
+
+
+
++size(lg_desktop)
+  #container
+    width: 1600px
+
+@media (min-width: 1200px) and (max-width: 1599px)
+  #container
+    width: 1200px
+@media (min-width: 800px) and (max-width: 1199px)
+    #container
+      width: 800px
+@media (min-width: 400px) and (max-width: 799px)
+    #container
+      width: 400px

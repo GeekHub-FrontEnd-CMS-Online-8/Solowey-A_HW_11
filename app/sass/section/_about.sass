@@ -1,0 +1,70 @@
+.about
+  background-color: #e3e3e3
+  padding: 75px 0
+  .container
+    flex-direction: column
+    align-items: center
+
+    .title
+      display: flex
+      flex-direction: column
+      width: 100%
+      background: #ffffff
+      padding: 50px
+
+      .subtitle
+        color: #3e3d3d
+        font-family: $crimson
+        font-size: em(14)
+        line-height: 25px
+        letter-spacing: 1.4px
+        margin-top: 40px
+      .button
+        display: flex
+        align-self: center
+        a
+          color: #3e3d3d
+          font-family: $montserrat
+          font-size: em(13)
+          line-height: 44.32px
+          letter-spacing: 1.47px
+          border: 2px solid #3e3d3d
+          width: 135px
+          display: flex
+          flex-direction: column
+          align-items: center
+          margin: 3px
+          transition: 0.3s
+          &:hover
+            color: #cecece
+            background-color: #3e3d3d
+
+  .wrap
+    margin: 0 auto
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    max-width: 1170px
+    padding-top: 40px
+    .item
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 250px
+      border-right: 1px solid #b0b0b0
+
+      img
+        margin-bottom: 20px
+      p
+        font-family: $montserrat
+        font-size: em(13)
+        line-height: em(18)
+        text-transform: uppercase
+        letter-spacing: 1.47px
+      .num
+        font-size: em(45)
+        line-height: em(30)
+        color: #3e3d3d
+    .reviews
+      border: transparent

@@ -1,0 +1,48 @@
+$browser-context: 16 // Default
+
+@function em($pixels, $context: $browser-context)
+  @return #{$pixels/$context}em
+
+
+$phone: 320px
+$phone_up: 800px
+$tablet: 801px
+$tablet_up: 1140px
+$desktop: 1141px
+$desktop_upp: 1600px
+
+
+
+
+
+
+=size($range)
+  @if $range == phone
+    @media (min-width: $phone) and (max-width: $phone_up)
+      @content
+  @if $range == tablet
+    @media (min-width: $tablet) and (max-width: $tablet_up)
+      @content
+  @if $range == desktop
+    @media (min-width: $desktop) and (max-width: $desktop_upp)
+      @content
+  @if $range == lg_desktop
+    @media (min-width: 1600px) and (max-width: 1920px)
+      @content
+
+
+
+
+$cols: 12
+$gutter: 40px
+
+=col($num)
+  width: calc( (((100% - (#{$gutter} * (#{$cols} - 1))) / #{$cols}) * #{$num}) + ( #{$gutter} * (#{$num} - 1)) )
+
+
+
+
+
+
+
+
